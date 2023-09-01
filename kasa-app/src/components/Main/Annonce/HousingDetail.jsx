@@ -7,6 +7,7 @@ import Carou from '../Carou/Carou';
 import Derouleannonce from '../Deroule/Derouleannonce';
 import TagPost from '../Tag/TagPost';
 import Profile from '../Profile/Profile';
+import Rating from '../Stars/Stars';
 
 const HousingDetail = () => {
   const { id } = useParams();
@@ -26,7 +27,7 @@ const HousingDetail = () => {
             <Carou pictures={housing.pictures} />
             <div className='h1-host'><h1>{housing.title}</h1><Profile host={housing.host.name} himage={housing.host.picture} /></div>
             <p className='housing-p'>{housing.location}</p>
-            <TagPost tags={housing.tags} />
+            <div className='tag-rating'><TagPost tags={housing.tags} /><Rating rating={parseInt(housing.rating, 10)} /></div>
             <Derouleannonce apartmentId={id} />
         </article>
         <Footer />
