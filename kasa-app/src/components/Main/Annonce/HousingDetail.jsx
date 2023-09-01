@@ -6,6 +6,7 @@ import Footer from '../../Footer/Footer';
 import Carou from '../Carou/Carou';
 import Derouleannonce from '../Deroule/Derouleannonce';
 import TagPost from '../Tag/TagPost';
+import Profile from '../Profile/Profile';
 
 const HousingDetail = () => {
   const { id } = useParams();
@@ -23,7 +24,7 @@ const HousingDetail = () => {
         <Header />
         <article className='housing-detail'>
             <Carou pictures={housing.pictures} />
-            <h1>{housing.title}</h1>
+            <div className='h1-host'><h1>{housing.title}</h1><Profile host={housing.host.name} himage={housing.host.picture} /></div>
             <p className='housing-p'>{housing.location}</p>
             <TagPost tags={housing.tags} />
             <Derouleannonce apartmentId={id} />
