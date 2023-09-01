@@ -7,3 +7,10 @@
 .star-empty {
     color: gray;
 }
+
+@media (max-width: 750px) {
+    .fa-star {
+        margin-top: 60px;
+        font-size: 16px;
+    }
+}

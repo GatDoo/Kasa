@@ -7,6 +7,8 @@
     z-index: 10;
     cursor: pointer;
 
+    
+
     img {
         height: 80%;
         width: 100%;
@@ -44,5 +46,11 @@
 @media (max-width: 1000px) {
     .card {
         width: 45%;
+    }
+    
+    @media (max-width: 750px) {
+        .card {
+           width: 100%; 
+        }
     }
 }

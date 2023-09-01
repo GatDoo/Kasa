@@ -9,6 +9,10 @@
         height: 600px;
         object-fit: cover;
         border-radius: 25px;
+
+        @media (max-width: 750px) {
+            height: 400px;
+        }
     }
 
     .carou-left {
