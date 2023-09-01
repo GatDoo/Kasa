@@ -8,6 +8,7 @@ import Derouleannonce from '../Deroule/Derouleannonce';
 import TagPost from '../Tag/TagPost';
 import Profile from '../Profile/Profile';
 import Rating from '../Stars/Stars';
+import {Navigate} from 'react-router-dom'
 
 const HousingDetail = () => {
   const { id } = useParams();
@@ -15,9 +16,9 @@ const HousingDetail = () => {
   const housings = data;
 
   const housing = housings.find(h => h.id === id);
-  if(!housing) {
-    return <div>Logement non trouvé</div>;
-}
+  if (!housing) {
+    return <Navigate to="/404" replace />;
+  }
 
 
   return (
