@@ -1,0 +1,39 @@
+.carou {
+    position: relative;
+    width: 90%;
+    margin: 20px 5%;
+
+    img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .carou-left {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 40px;
+        background: none;
+        border: none;
+        font-size: 80px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .carou-right {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        right: -160px;
+        background: none;
+        border: none;
+        font-size: 80px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .carou-left:focus, .carou-right:focus {
+        outline: none;
+    }
+}

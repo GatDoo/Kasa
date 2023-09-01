@@ -1,0 +1,21 @@
+.deroule-annonce {
+    width: 90%;
+    margin: 20px 5%;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+
+    .other-element {
+        width: 42.5%;
+
+        .deroule-annonce1 {
+          width: 100%;
+          display: flex;
+        }
+    }
+
+    .other-element.moved ~ .other-element {
+        transform: translateY(0);
+        transition: transform 0.3s ease-out;
+    }
+}

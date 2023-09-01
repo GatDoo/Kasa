@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+    gap: 30px;
+
+    img {
+        width: 122px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    h2 {
+        color: white;
+    }
+}
