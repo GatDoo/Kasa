@@ -14,9 +14,19 @@
             padding: 5px 8px;
             border-radius: 10px;
 
-            @media (max-width: 500px) {
+            @media (max-width: 1000px) {
+                font-size: 14px;
+                width: 140px;
+            }
+
+            @media (max-width: 600px) {
                 font-size: 12px;
                 width: 100px;
+            }
+
+            @media (max-width: 430px) {
+                font-size: 10px;
+                width: 80px;
             }
         }
     }  
