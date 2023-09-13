@@ -1,5 +1,4 @@
 import './main.scss'
-import './App.css'
 import { BrowserRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom'
 
 import Accueil from './Pages/Accueil';
