@@ -1,13 +1,17 @@
 import React from 'react';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
-import Banner2 from '../components/Main/Banner2/Banner2';
+import Banner from '../components/Main/Banner/Banner';
 import Deroule from '../components/Main/Deroule/Deroule';
+import bannerLogo from '../images/banner2.png';
 
 function APropos() {
   return <div>
     <Header />
-    <Banner2 />
+    <Banner 
+      bannerLogo = {bannerLogo}
+      h1Value = "Chez vous, partout et ailleurs"
+    />;
     <Deroule />
     <Footer />
     </div>;

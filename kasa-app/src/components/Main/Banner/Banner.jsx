@@ -1,12 +1,11 @@
 import React from 'react'
-import bannerlogo from '../../../images/IMG.png'
 
-export default function Banner() {
+export default function Banner({bannerLogo, h1Value}) {
   return (
     <div className='banner-css'>
         <p></p>
-        <img src={bannerlogo} alt="" />
-        <h1>Chez vous, partout et ailleurs</h1>
+        <img src={bannerLogo} alt="" />
+        <h1>{h1Value}</h1>
     </div>
   )
 }
