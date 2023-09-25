@@ -4,7 +4,7 @@ import data from '../Cards/Card/data.json'
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 import Carou from '../Carou/Carou';
-import Derouleannonce from '../Deroule/Derouleannonce';
+import DerouleE from '../Deroule/DerouleE';
 import TagPost from '../Tag/TagPost';
 import Profile from '../Profile/Profile';
 import Rating from '../Stars/Stars';
@@ -29,7 +29,20 @@ const HousingDetail = () => {
             <div className='h1-host'><h1>{housing.title}</h1><Profile host={housing.host.name} himage={housing.host.picture} /></div>
             <p className='housing-p'>{housing.location}</p>
             <div className='tag-rating'><TagPost tags={housing.tags} /><Rating rating={parseInt(housing.rating, 10)} /></div>
-            <Derouleannonce apartmentId={id} />
+            <div className='deroule-annonce'>
+              <DerouleE
+                className="deroule-annonce1"
+                key ={housing.id}
+                title={'Description'}
+                description={housing.description}
+              />
+              <DerouleE
+                className="deroule-annonce1"
+                key ={housing.id + housing.rating}
+                title={'Equipement'}
+                description={housing.equipments}
+              />
+            </div>
         </article>
         <Footer />
     </div>
