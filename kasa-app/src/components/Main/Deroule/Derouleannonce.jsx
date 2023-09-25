@@ -1,5 +1,4 @@
 import React from 'react'
-import Deroule1 from './Deroule1'
 import data from './../Cards/Card/data.json'
 import DerouleE from './DerouleE'
 
@@ -12,7 +11,7 @@ export default function Derouleannonce({ apartmentId }) {
   
     return (
       <div className='deroule-annonce'>
-          <Deroule1
+          <DerouleE
               className="deroule-annonce1"
               key ={apartment.id}
               title={'Description'}

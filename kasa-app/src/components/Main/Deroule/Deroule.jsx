@@ -1,5 +1,5 @@
 import React from 'react'
-import Deroule1 from './Deroule1'
+import DerouleE from './DerouleE'
 
 const derouleTitle = [
     {
@@ -28,7 +28,7 @@ export default function Deroule() {
   return (
     <div className='deroule1'>
         {derouleTitle.map(item => (
-            <Deroule1
+            <DerouleE
                 key ={item.id}
                 title={item.title}
                 description={item.description}
