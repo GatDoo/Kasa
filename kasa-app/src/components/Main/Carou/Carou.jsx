@@ -15,11 +15,14 @@ export default function Carou({ pictures }) {
     );
   };
 
+
+
   return (
     <div className='carou'>
       <button className='carou-left' onClick={goToPrevSlide}>←</button>
       <img src={pictures[currentSlide]} alt={`Slide ${currentSlide}`} />
       <button className='carou-right' onClick={goToNextSlide}>→</button>
+      <p className='slide-count'>{currentSlide + 1} / {pictures.length}</p>
     </div>
   )
 }

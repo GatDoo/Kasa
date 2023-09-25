@@ -42,4 +42,16 @@
     .carou-left:focus, .carou-right:focus {
         outline: none;
     }
+
+    .slide-count {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        bottom: 2%;
+        left: 50%;
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+    }
 }
